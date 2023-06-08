@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: rgb(113, 139, 224);
+            border: none;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: rgb(60, 194, 27);
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Information Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label>Gender:</label>
+        <label for="male">
+            <input type="radio" id="male" name="gender" value="male" required> Male
+        </label>
+        <label for="female">
+            <input type="radio" id="female" name="gender" value="female" required> Female
+        </label>
+        
+        <label>Education:</label>
+        <label for="school">
+            <input type="checkbox" id="school" name="education" value="school"> School
+        </label>
+        <label for="college">
+            <input type="checkbox" id="college" name="education" value="college"> College
+        </label>
+        <label for="university">
+            <input type="checkbox" id="university" name="education" value="university"> University
+        </label>
+        
+        <label for="tea">Do you like tea?</label>
+        <select id="tea" name="tea">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="maybe">Maybe</option>
+        </select>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
